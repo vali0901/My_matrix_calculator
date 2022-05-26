@@ -32,7 +32,6 @@ void print_matrix(matrix x)
 {
 	for(int i = 0; i < x.nr_rows; i++) {
 		for(int j = 0; j < x.nr_columns; j++) {
-			// printf("%d\n", p[0].mat[i][j].nr_elem_of_exp);
 			for(int q = 0; q < x.mat[i][j].nr_elem_of_exp; q++) {
 				if(x.mat[i][j].exp[q].coef > 0 && q != 0)
 					printf("+");
@@ -61,7 +60,6 @@ void free_resources(matrix p)
 		free(p.mat[i]);
 	}
 	free(p.mat);
-	//return p;
 }
 
 matrix copy_matrix(matrix x, matrix y)

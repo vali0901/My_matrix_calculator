@@ -9,20 +9,17 @@ char *number_extraction(char *word, int i)
 	char number[30]="";
 	int k = 0;
 	number[k++] = word[i];
-	//printf("%c\n", number[0]);
 	while((word[i+k] >= '0' && word[i+k] <='9') || word[i+k] == '.' )
 	{
 		number[k] = word[i+k];
 		++k;
 	}
 	if(strlen(number) == 1 && number[0] == '-') {
-	//	printf("a intrat\n");
 		strcpy(number, "-1");
 	}
 	else if (strcmp(number, "+") == 0)
 		strcpy(number, "1");
 	char *aux = strdup(number);
-	//printf("%s\n", aux);
 	return aux;
 }
 
@@ -34,7 +31,6 @@ char *var_extraction(char *word, int i)
 		var[k] = word[i + k];
 		++k;
 	}
-	//printf("%s\n", var);
 	char *aux = strdup(var);
 	return aux;
 }
@@ -63,7 +59,6 @@ matrix_element save_element(matrix_element x, char *word)
 			}
 			nr_elem_of_exp += 1;
 			tmp = aux;
-			//tmp[nr_elem_of_exp - 1].sign = word[i];
 		} 
 		if((word[i] >= '0' && word[i] <='9') || (word[i] == '+' || word[i] == '-')) {
 			char *number = number_extraction(word, i);
@@ -76,7 +71,6 @@ matrix_element save_element(matrix_element x, char *word)
 			
 			free(number);
 		} else if((word[i] >= 'a' && word[i] <='z') || (word[i] >= 'A' && word[i] <='Z')) {
-			//printf("ok\n");
 			char *var_string = var_extraction(word, i);
 			tmp[nr_elem_of_exp - 1].var = var_string;
 			if(i == 0)

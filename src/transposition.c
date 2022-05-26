@@ -34,6 +34,6 @@ matrix *matrix_transposition_function(matrix *p, int index)
 	if(transposition_index < index && transposition_index >= 0)
 		p[transposition_index] = matrix_transposition(p[transposition_index]);
 	else
-		printf("Invalid transposition matrix index\n");
+		printf("Invalid index: out of bounds\n");
 	return p;
 }
