@@ -13,7 +13,7 @@ LOAD 2 3
 a 2 a
 (this loads into memory a matrix with 2 rows and 3 columns with 
 the specified values)
--------------------------------------------------------------------------------
+
 ## RMV
 -> removes a matrix from memory, depending on the given index
 
@@ -21,20 +21,20 @@ usage:
 RMV 0
 (removes the first matrix in the matrices array, all the other matrices moving
 with a position to the left)
-----------------------------------------------------------------------------------
+
 ## PRINT
 -> prints a matrix, depending on the given index
 
 usage:
 PRINT 0
 (prints the first matrix, without changing anything)
-----------------------------------------------------------------------------------
+
 ## PRINT_ALL
 -> prints all matrices in the memory
 
 usage:
 PRINT_ALL
------------------------------------------------------------------------------------
+
 ## TRANSP 
 -> modifies the matrix with the given index with its transpose
 
