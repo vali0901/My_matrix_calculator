@@ -7,10 +7,14 @@ operations:
 ## LOAD
 -> it loads into the memory a new matrix, at the end of the matrices array
 
-usage: 
+usage:
+ 
 LOAD 2 3
+
 1 2 3
+
 a 2 a
+
 (this loads into memory a matrix with 2 rows and 3 columns with 
 the specified values)
 
