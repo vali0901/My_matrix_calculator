@@ -42,7 +42,7 @@ usage:
 TRANSP 0
 (modifies the first matrix with its transpose, if the matrix is [1, 2, 3],
 after the TRANSP command, the matrix will be [1; 2; 3])
------------------------------------------------------------------------------------
+
 ## SUM
 -> creates a new matrix which will be placed at the end of the matrices array,
 and will be the result of adding two matrices with the given index
@@ -50,7 +50,7 @@ and will be the result of adding two matrices with the given index
 usage:
 SUM 0 1
 (creates a new_matrix, the result of adding the first and the second matrix)
------------------------------------------------------------------------------------
+
 ## MUL
 -> same as sum, but it is the result of multiplying two matrices
 
@@ -58,7 +58,7 @@ usage:
 MUL 0 1
 it can also be:
 MUL 0 0
------------------------------------------------------------------------------------
+
 ## SCALE
 -> scales a matrix with a number
 
@@ -66,15 +66,14 @@ usage:
 SCALE 0 2
 (it scales the first matrix with 2, if the first matrix is [1, a, 4],
 after this command it will be [2, 2a, 8])
------------------------------------------------------------------------------------
+
 ## EXIT
 -> closes the program and frees all the resources used
 
------------------------------------------------------------------------------------
 ## CONSTRAINTS:
 If you wish working with unknown variables, please use one-letter named variables,
 otherwise the program will not work as wished.
------------------------------------------------------------------------------------
+
 ## CONVENTIONS:
 a^2 = aa
 a^3 * d^2 * c * b = aaabcdd
