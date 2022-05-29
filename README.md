@@ -22,7 +22,9 @@ the specified values)
 -> removes a matrix from memory, depending on the given index
 
 usage:
+
 RMV 0
+
 (removes the first matrix in the matrices array, all the other matrices moving
 with a position to the left)
 
@@ -30,20 +32,25 @@ with a position to the left)
 -> prints a matrix, depending on the given index
 
 usage:
+
 PRINT 0
+
 (prints the first matrix, without changing anything)
 
 ## PRINT_ALL
 -> prints all matrices in the memory
 
 usage:
+
 PRINT_ALL
 
 ## TRANSP 
 -> modifies the matrix with the given index with its transpose
 
 usage:
+
 TRANSP 0
+
 (modifies the first matrix with its transpose, if the matrix is [1, 2, 3],
 after the TRANSP command, the matrix will be [1; 2; 3])
 
@@ -52,22 +59,29 @@ after the TRANSP command, the matrix will be [1; 2; 3])
 and will be the result of adding two matrices with the given index
 
 usage:
+
 SUM 0 1
+
 (creates a new_matrix, the result of adding the first and the second matrix)
 
 ## MUL
 -> same as sum, but it is the result of multiplying two matrices
 
 usage:
+
 MUL 0 1
+
 it can also be:
+
 MUL 0 0
 
 ## SCALE
 -> scales a matrix with a number
 
 usage:
+
 SCALE 0 2
+
 (it scales the first matrix with 2, if the first matrix is [1, a, 4],
 after this command it will be [2, 2a, 8])
 
@@ -80,5 +94,5 @@ otherwise the program will not work as wished.
 
 ## CONVENTIONS:
 a^2 = aa
-a^3 * d^2 * c * b = aaabcdd
-(the variables will be sortet alphabetically)
+
+a^3 * d^2 * c * b = aaabcdd (the variables will be sortet alphabetically)
